@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Muli Regular";
+    list-style-type: none;
+}
+body{
+    background-color: #002343;
+}
+.cor-dois{
+    background-color: #00238e;
+    -webkit-clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+    width:100%;
+    padding: 3%;
+    height: 90vh;
+}
+.pessoa-off{
+    background-color: #005a91;
+    width: 42vh;
+    height: 42vh;
+    margin: auto;
+    border-radius: 51%;
+}
+.pessoa-off img{
+    width: 42vh;
+}
+.cor-dois{
+    align-items: center;
+}
+
+.Cadastro{
+    display: grid;
+    justify-content: center;
+}
+.Botao-cadastrar button{
+    text-decoration: none;
+    width: 80px;
+    height: 4vh;
+    background-color: #3a75d6;
+    text-align: center;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #002343 1px;
+}
+.Cadastro input{
+    margin: 1vh;
+    width: 350px;
+    height: 6vh;
+    background-color: #d2ebf9;
+    border-radius: 1vh;
+    border: solid #002343 1px;
+    text-align: center;
+}
+
+.rodape{
+    margin: 10px;
+    margin-left: 4%;
+} 
+.rodape img{
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+}
+.chat img{
+    width: 3em;
+    height: 3em;
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+}
+.escondido{
+    display: none;
+}
+.menu-geral{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+}
+#menuTopo{
+   position: absolute;
+   right: 40px;
+   
+}
+#menuTopo a{
+    color:#FFF;
+    text-decoration: none;
+    /* background: red; */
+    padding: 10px 20px;
+}
+#menuTopo li{
+    margin: 1em 0;
+}
+.menu-geral i{
+    font-size: 40px;
+}
+.menu-geral nav{
+    background-color: #0455e9;
+    height: 14em;
+    width: 10em;
+    margin-right: 21px;
+    border-radius: 10% 0% 10% 10%;
+}
+.flex-container{
+    display: flex;
+}
+.escondido{
+    animation-name: squad;
+    animation-duration: 8s;
+}
+#chat .flex-container >*{
+    flex: 1;
+}
+#chat{
+    width: 400px;
+    height: 45vh;
+    background-color: lightblue;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+} 
+
+#chat nav{
+    align-items: center;
+}
+#chat .perfil{
+    align-items: center;
+    flex: 4;
+}
+
+#chat header{ 
+    width: 100%;
+    height: 50px;
+    background: rgb(119, 149, 248); 
+}
+
+#chat .perfil-img{ 
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+#chat .perfil-dados{
+    flex: 4;
+}
+#chat .perfil-img img {
+    border-radius: 50%;
+    width: 78%;
+    height: 78%;
+}
+#chat .perfil-nome{
+    font-weight: 600;
+}
+#chat .perfil-status{
+    color: rgb(24, 243, 170);
+    text-shadow: 0 0 2px aquamarine;
+}
+#chat .acoes a{
+    color: rgb(27, 250, 107);
+}
+#chat main{
+    overflow-y: auto;
+    width: 100%;
+    height: 35vh;
+    flex-direction: column;
+}
+#chat .chat-msg{
+    width: 80%;
+    background: #ccc;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: .5rem;
+}
+#chat .chat-msg-enviada{
+    align-self: flex-end;
+    background: lightgreen;
+}
+#chat footer{
+    height: 45px;
+    width: 100%;
+    background: rgb(77, 113, 190);
+    align-items: center;
+    text-align: center;
+}
+#chat footer i{
+    flex: 1;
+}
+#chat footer form{
+    flex: 6 !important;
+}
+#chat footer form textarea{
+    width: 100%;
+    resize: none;
+}
